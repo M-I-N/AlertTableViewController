@@ -12,9 +12,14 @@
 		AFE30A682215327200520F34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE30A662215327200520F34 /* Main.storyboard */; };
 		AFE30A6A2215327700520F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE30A692215327700520F34 /* Assets.xcassets */; };
 		AFE30A6D2215327700520F34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE30A6B2215327700520F34 /* LaunchScreen.storyboard */; };
+		AFE30A762215639400520F34 /* AlertTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE30A74221560D300520F34 /* AlertTableView.swift */; };
+		AFE30A782215674900520F34 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE30A772215674900520F34 /* HomeViewController.swift */; };
+		AFE30A7A221575A400520F34 /* AlertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE30A79221575A400520F34 /* AlertTableViewController.swift */; };
+		D5144AC4A74FDF2A43CCA1B4 /* Pods_AlertTableViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBAFC86826C96165911F2051 /* Pods_AlertTableViewController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1319354906AD5757F2549CD /* Pods-AlertTableViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTableViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTableViewController/Pods-AlertTableViewController.release.xcconfig"; sourceTree = "<group>"; };
 		AFE30A5F2215327200520F34 /* AlertTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE30A622215327200520F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFE30A642215327200520F34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,11 @@
 		AFE30A692215327700520F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFE30A6C2215327700520F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFE30A6E2215327700520F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE30A74221560D300520F34 /* AlertTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTableView.swift; sourceTree = "<group>"; };
+		AFE30A772215674900520F34 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AFE30A79221575A400520F34 /* AlertTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTableViewController.swift; sourceTree = "<group>"; };
+		C5774895F06D779312E680DB /* Pods-AlertTableViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTableViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTableViewController/Pods-AlertTableViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		FBAFC86826C96165911F2051 /* Pods_AlertTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlertTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5144AC4A74FDF2A43CCA1B4 /* Pods_AlertTableViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		477E689316DF8FD109F0F715 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5774895F06D779312E680DB /* Pods-AlertTableViewController.debug.xcconfig */,
+				A1319354906AD5757F2549CD /* Pods-AlertTableViewController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A57042EA7D3F483BD4C61CEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBAFC86826C96165911F2051 /* Pods_AlertTableViewController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AFE30A562215327200520F34 = {
 			isa = PBXGroup;
 			children = (
 				AFE30A612215327200520F34 /* AlertTableViewController */,
 				AFE30A602215327200520F34 /* Products */,
+				477E689316DF8FD109F0F715 /* Pods */,
+				A57042EA7D3F483BD4C61CEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +86,9 @@
 			children = (
 				AFE30A622215327200520F34 /* AppDelegate.swift */,
 				AFE30A642215327200520F34 /* ViewController.swift */,
+				AFE30A772215674900520F34 /* HomeViewController.swift */,
+				AFE30A74221560D300520F34 /* AlertTableView.swift */,
+				AFE30A79221575A400520F34 /* AlertTableViewController.swift */,
 				AFE30A662215327200520F34 /* Main.storyboard */,
 				AFE30A692215327700520F34 /* Assets.xcassets */,
 				AFE30A6B2215327700520F34 /* LaunchScreen.storyboard */,
@@ -71,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFE30A712215327700520F34 /* Build configuration list for PBXNativeTarget "AlertTableViewController" */;
 			buildPhases = (
+				57003BA7B05C2B7C41C09D32 /* [CP] Check Pods Manifest.lock */,
 				AFE30A5B2215327200520F34 /* Sources */,
 				AFE30A5C2215327200520F34 /* Frameworks */,
 				AFE30A5D2215327200520F34 /* Resources */,
+				8B1F355986CE07E1D29573EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +165,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57003BA7B05C2B7C41C09D32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlertTableViewController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B1F355986CE07E1D29573EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AlertTableViewController/Pods-AlertTableViewController-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDCAlertView/SDCAlertView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCAlertView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlertTableViewController/Pods-AlertTableViewController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFE30A5B2215327200520F34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +219,9 @@
 			files = (
 				AFE30A652215327200520F34 /* ViewController.swift in Sources */,
 				AFE30A632215327200520F34 /* AppDelegate.swift in Sources */,
+				AFE30A762215639400520F34 /* AlertTableView.swift in Sources */,
+				AFE30A782215674900520F34 /* HomeViewController.swift in Sources */,
+				AFE30A7A221575A400520F34 /* AlertTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,6 +365,7 @@
 		};
 		AFE30A722215327700520F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5774895F06D779312E680DB /* Pods-AlertTableViewController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +384,7 @@
 		};
 		AFE30A732215327700520F34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1319354906AD5757F2549CD /* Pods-AlertTableViewController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

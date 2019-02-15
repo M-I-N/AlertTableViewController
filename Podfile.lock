@@ -1,0 +1,16 @@
+PODS:
+  - SDCAlertView (9.0.1)
+
+DEPENDENCIES:
+  - SDCAlertView
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SDCAlertView
+
+SPEC CHECKSUMS:
+  SDCAlertView: f24c447279278dca39d41562b414276980b066d8
+
+PODFILE CHECKSUM: dc8cc75be312eae1ad938002c291651407404461
+
+COCOAPODS: 1.5.0
