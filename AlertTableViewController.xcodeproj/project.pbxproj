@@ -13,6 +13,7 @@
 		AF9CDE8422172331006F77AE /* PopoverPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9CDE8222172331006F77AE /* PopoverPickerTableViewCell.xib */; };
 		AF9CDE872217235A006F77AE /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CDE852217235A006F77AE /* Reusable.swift */; };
 		AF9CDE882217235A006F77AE /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CDE862217235A006F77AE /* UITableView+Reusable.swift */; };
+		AFC2B02822172E9D00473A33 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2B02722172E9D00473A33 /* DetailViewController.swift */; };
 		AFE30A632215327200520F34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE30A622215327200520F34 /* AppDelegate.swift */; };
 		AFE30A682215327200520F34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE30A662215327200520F34 /* Main.storyboard */; };
 		AFE30A6A2215327700520F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE30A692215327700520F34 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		AF9CDE8222172331006F77AE /* PopoverPickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopoverPickerTableViewCell.xib; sourceTree = "<group>"; };
 		AF9CDE852217235A006F77AE /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		AF9CDE862217235A006F77AE /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		AFC2B02722172E9D00473A33 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AFE30A5F2215327200520F34 /* AlertTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE30A622215327200520F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFE30A672215327200520F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				AFE30A622215327200520F34 /* AppDelegate.swift */,
 				AFE30A772215674900520F34 /* HomeViewController.swift */,
+				AFC2B02722172E9D00473A33 /* DetailViewController.swift */,
 				AF9CDE7F2217134A006F77AE /* PopoverPicker.swift */,
 				AF9CDE8122172331006F77AE /* PopoverPickerTableViewCell.swift */,
 				AF9CDE8222172331006F77AE /* PopoverPickerTableViewCell.xib */,
@@ -234,6 +237,7 @@
 				AFE30A782215674900520F34 /* HomeViewController.swift in Sources */,
 				AF9CDE7E2216F946006F77AE /* Model.swift in Sources */,
 				AF9CDE882217235A006F77AE /* UITableView+Reusable.swift in Sources */,
+				AFC2B02822172E9D00473A33 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

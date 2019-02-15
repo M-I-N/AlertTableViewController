@@ -27,10 +27,20 @@ class HomeViewController: UIViewController {
     @IBAction func popupButtonDidTap(_ sender: UIButton) {
         
         let models = Model.allModels()
-        popover = PopoverPicker(title: "Choose an Option", dismissButtonTitle: "Cancel", values: models, labels: ({ "\($0.name)'s ID: \($0.id)" }), onSelect: { selectedModel in
-            print(selectedModel.name)
+        popover = PopoverPicker(title: "Choose an Option", dismissButtonTitle: "Cancel", values: models, labels: ({ "\($0.name)'s ID: \($0.id)" }), onSelect: { [unowned self] selectedModel in
+            self.performSegue(withIdentifier: "DetailSegue", sender: selectedModel)
         })
         popover.present()
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "DetailSegue",
+            let detailViewController = segue.destination as? DetailViewController,
+            let model = sender as? Model {
+                detailViewController.model = model
+        }
         
     }
 
