@@ -10,30 +10,18 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    private var alertTableView: AlertTableView!
+    private var alertTableView: AlertTableView<Model>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func popupButtonDidTap(_ sender: UIButton) {
-        let schedules = ["Schedule", "Schedule", "Schedule", "Schedule"]
-        alertTableView = AlertTableView(schedules: schedules)
+        let models = Model.allModels()
+        alertTableView = AlertTableView(values: models, labels: ({ "\($0.name)'s ID: \($0.id)" }), onSelect: { model in
+            print(model)
+        })
         alertTableView.present()
-//        let alertTVC = AlertTableViewController(schedules: schedules)
-//        present(alertTVC, animated: true)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

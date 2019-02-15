@@ -9,17 +9,25 @@
 import UIKit
 import SDCAlertView
 
-class AlertTableView: UIView {
+class AlertTableView<Element>: UIView, UITableViewDataSource {
 
-    private var schedules = [String]()
+//    private var schedules = [String]()
+    typealias SelectionHandler = (Element) -> Void
+    typealias LabelProvider = (Element) -> String
+    
+    private var values = [Element]()
+    private var labels: LabelProvider?
+    private var onSelect: SelectionHandler?
 
     private var alert: AlertController!
     private let tableView = UITableView(frame: .zero, style: .plain)
     private let tableViewCellHeight: CGFloat = 135/3
 
-    convenience init(schedules: [String]) {
+    convenience init(values : [Element], labels : @escaping LabelProvider = String.init(describing:), onSelect : SelectionHandler?) {
         self.init(frame: .zero)
-        self.schedules = schedules
+        self.values = values
+        self.labels = labels
+        self.onSelect = onSelect
         setupTableView()
         setupAlertController()
     }
@@ -64,7 +72,7 @@ class AlertTableView: UIView {
         alert.contentView.addSubview(tableView)
 
         let maximumNumberOfCellToBeVisible = 3
-        let numberOfVisibleCell = schedules.count < maximumNumberOfCellToBeVisible ? schedules.count : maximumNumberOfCellToBeVisible
+        let numberOfVisibleCell = values.count < maximumNumberOfCellToBeVisible ? values.count : maximumNumberOfCellToBeVisible
         let tableViewMaxHeight = tableViewCellHeight * CGFloat(numberOfVisibleCell) // needs logic
         tableView.leadingAnchor.constraint(equalTo: alert.contentView.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: alert.contentView.trailingAnchor).isActive = true
@@ -94,23 +102,19 @@ class AlertTableView: UIView {
     func dismiss() {
         alert.dismiss()
     }
-
-}
-
-extension AlertTableView: UITableViewDataSource {
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return schedules.count
+        return values.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let schedule = schedules[indexPath.row]
-        cell.textLabel?.text = "\(schedule) \(indexPath.row + 1)"
+        let value = values[indexPath.row]
+        let label = labels?(value)
+        cell.textLabel?.text = label
         cell.textLabel?.textColor = .white
         cell.backgroundColor = .clear
         return cell
     }
-
 
 }
