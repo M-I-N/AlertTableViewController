@@ -27,7 +27,7 @@ class HomeViewController: UIViewController {
     @IBAction func popupButtonDidTap(_ sender: UIButton) {
         
         let models = Model.allModels()
-        popover = PopoverPicker(values: models, labels: ({ "\($0.name)'s ID: \($0.id)" }), onSelect: { selectedModel in
+        popover = PopoverPicker(title: "Choose an Option", dismissButtonTitle: "Cancel", values: models, labels: ({ "\($0.name)'s ID: \($0.id)" }), onSelect: { selectedModel in
             print(selectedModel.name)
         })
         popover.present()

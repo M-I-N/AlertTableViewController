@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		AF9CDE7E2216F946006F77AE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CDE7D2216F946006F77AE /* Model.swift */; };
 		AF9CDE802217134A006F77AE /* PopoverPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CDE7F2217134A006F77AE /* PopoverPicker.swift */; };
+		AF9CDE8322172331006F77AE /* PopoverPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CDE8122172331006F77AE /* PopoverPickerTableViewCell.swift */; };
+		AF9CDE8422172331006F77AE /* PopoverPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9CDE8222172331006F77AE /* PopoverPickerTableViewCell.xib */; };
+		AF9CDE872217235A006F77AE /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CDE852217235A006F77AE /* Reusable.swift */; };
+		AF9CDE882217235A006F77AE /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CDE862217235A006F77AE /* UITableView+Reusable.swift */; };
 		AFE30A632215327200520F34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE30A622215327200520F34 /* AppDelegate.swift */; };
 		AFE30A682215327200520F34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE30A662215327200520F34 /* Main.storyboard */; };
 		AFE30A6A2215327700520F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE30A692215327700520F34 /* Assets.xcassets */; };
@@ -21,6 +25,10 @@
 		A1319354906AD5757F2549CD /* Pods-AlertTableViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTableViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlertTableViewController/Pods-AlertTableViewController.release.xcconfig"; sourceTree = "<group>"; };
 		AF9CDE7D2216F946006F77AE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Model.swift; path = "/Users/nayem/Documents/iOS Development/R&D Projects/AlertTableViewController/AlertTableViewController/Model.swift"; sourceTree = "<absolute>"; };
 		AF9CDE7F2217134A006F77AE /* PopoverPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverPicker.swift; sourceTree = "<group>"; };
+		AF9CDE8122172331006F77AE /* PopoverPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverPickerTableViewCell.swift; sourceTree = "<group>"; };
+		AF9CDE8222172331006F77AE /* PopoverPickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopoverPickerTableViewCell.xib; sourceTree = "<group>"; };
+		AF9CDE852217235A006F77AE /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		AF9CDE862217235A006F77AE /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		AFE30A5F2215327200520F34 /* AlertTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE30A622215327200520F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFE30A672215327200520F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +93,10 @@
 				AFE30A622215327200520F34 /* AppDelegate.swift */,
 				AFE30A772215674900520F34 /* HomeViewController.swift */,
 				AF9CDE7F2217134A006F77AE /* PopoverPicker.swift */,
+				AF9CDE8122172331006F77AE /* PopoverPickerTableViewCell.swift */,
+				AF9CDE8222172331006F77AE /* PopoverPickerTableViewCell.xib */,
+				AF9CDE852217235A006F77AE /* Reusable.swift */,
+				AF9CDE862217235A006F77AE /* UITableView+Reusable.swift */,
 				AF9CDE7D2216F946006F77AE /* Model.swift */,
 				AFE30A662215327200520F34 /* Main.storyboard */,
 				AFE30A692215327700520F34 /* Assets.xcassets */,
@@ -157,6 +169,7 @@
 				AFE30A6D2215327700520F34 /* LaunchScreen.storyboard in Resources */,
 				AFE30A6A2215327700520F34 /* Assets.xcassets in Resources */,
 				AFE30A682215327200520F34 /* Main.storyboard in Resources */,
+				AF9CDE8422172331006F77AE /* PopoverPickerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,10 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9CDE872217235A006F77AE /* Reusable.swift in Sources */,
 				AFE30A632215327200520F34 /* AppDelegate.swift in Sources */,
 				AF9CDE802217134A006F77AE /* PopoverPicker.swift in Sources */,
+				AF9CDE8322172331006F77AE /* PopoverPickerTableViewCell.swift in Sources */,
 				AFE30A782215674900520F34 /* HomeViewController.swift in Sources */,
 				AF9CDE7E2216F946006F77AE /* Model.swift in Sources */,
+				AF9CDE882217235A006F77AE /* UITableView+Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
