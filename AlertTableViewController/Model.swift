@@ -1,8 +1,9 @@
 //
 //  Model.swift
-//  
+//  AlertTableViewController
 //
 //  Created by Nayem on 2/15/19.
+//  Copyright © 2019 BJIT Ltd. All rights reserved.
 //
 
 import Foundation
